@@ -23,9 +23,11 @@ Answered before anything runs. Claude writes them in as you said them, and they 
 
 Code: `part1_independent.py`. Figure: `figures/part1_strip.png`.
 
-**What Gini and unpredictability each show, in your own words:** XXXX
+**What Gini and unpredictability each show, in your own words:** Gini shows how dominated a world is by a small number or artists, or rather how much the attention of listeners is shared among artists. 
 
-**What the figure shows, one sentence:** XXXX
+Unpredictability is how identical worlds perform when compared to each other, with 0 meaning there is no variation at all
+
+**What the figure shows, one sentence:** Artists with higher true popularity tend to also have a larger share of the world, but unpredictability of these worlds seems large
 
 ## Part 2. The recommender
 
