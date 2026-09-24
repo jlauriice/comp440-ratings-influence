@@ -63,7 +63,7 @@ Here are the four Part 0 questions — a word or a line each is enough:
 <!-- transcript-session: 56391b92-74a9-4dd1-af5b-32d24c7277d5 | 2026-09-24T19:15:43.051Z -->
 ## Session `56391b92` — 2026-09-24 19:15:43
 
-*1 user turns. Tool outputs and reasoning omitted.*
+*2 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 *(ran `/setup`)*
@@ -71,5 +71,52 @@ Here are the four Part 0 questions — a word or a line each is enough:
 **Claude:**
 - 🔧 `Bash` — Show commit history and remotes
 - 🔧 `Bash` — Install dependencies, check measures, view writeup header
+I checked each setup step. All four were already done, so I only confirmed them:
+
+```
+$ git remote -v
+origin	https://github.com/jlauriice/comp440-ratings-influence.git (fetch)
+origin	https://github.com/jlauriice/comp440-ratings-influence.git (push)
+upstream	https://github.com/shilad/comp440-ratings-influence.git (fetch)
+upstream	https://github.com/shilad/comp440-ratings-influence.git (push)
+
+$ uv sync
+Resolved 13 packages in 16ms
+Checked 12 packages in 2ms
+
+$ uv run python measures.py
+ok    Gini of [1, 0, 0, 0], one artist has everything: 3/4: expected 0.7500, computed 0.7500
+ok    Gini of eleven equal shares: 0: expected 0.0000, computed 0.0000
+ok    Gini of true popularity itself, as shares: expected 0.3010, computed 0.3010
+ok    Unpredictability, two worlds each won entirely by a different artist: 2/11: expected 0.1818, computed 0.1818
+ok    Unpredictability, three worlds of two artists, pair differences 0.2, 0.4, 0.2: expected 0.2667, computed 0.2667
+```
+
+`WRITEUP.md` already has **Name:** Laurice and **Date:** September 24, 2026, and the `Name and date` commit is there. Setup is done.
+
+**Part 0** is up next: four predictions. A word or a line for each is enough.
+
+1. Once people can see the download counts, which artist ends up with the most downloads in most worlds?
+2. As people pay more attention to the counts, does inequality between the artists rise or fall?
+3. Does the best artist (true popularity 100) ever lose a world?
+4. Can a recommender rule lower inequality without making the outcome track true taste less well?
+
+**User:**
+1. if they can see the download counts then the artists who already has the most will get even more
+2. Inequality rises
+3. no they cant
+4. Yes
+
+**Claude:**
+- 🔧 `Read` — /Users/laurice/Documents/Projects in DS/Untitled/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Bash` — Write Part 0 predictions and commit
+- 🔧 `Edit` — /Users/laurice/Documents/Projects in DS/Untitled/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Edit` — /Users/laurice/Documents/Projects in DS/Untitled/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Edit` — /Users/laurice/Documents/Projects in DS/Untitled/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Edit` — /Users/laurice/Documents/Projects in DS/Untitled/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Read` — /Users/laurice/Documents/Projects in DS/Untitled/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Bash` — Commit the Part 0 predictions
+Now Part 1: users choosing on their own.
+- 🔧 `Bash` — Run the Part 1 independent-users script
 
 <!-- end-session: 56391b92-74a9-4dd1-af5b-32d24c7277d5 -->
