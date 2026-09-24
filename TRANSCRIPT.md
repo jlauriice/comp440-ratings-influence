@@ -63,7 +63,7 @@ Here are the four Part 0 questions — a word or a line each is enough:
 <!-- transcript-session: 56391b92-74a9-4dd1-af5b-32d24c7277d5 | 2026-09-24T19:15:43.051Z -->
 ## Session `56391b92` — 2026-09-24 19:15:43
 
-*2 user turns. Tool outputs and reasoning omitted.*
+*3 user turns. Tool outputs and reasoning omitted.*
 
 **User:**
 *(ran `/setup`)*
@@ -118,5 +118,51 @@ ok    Unpredictability, three worlds of two artists, pair differences 0.2, 0.4, 
 - 🔧 `Bash` — Commit the Part 0 predictions
 Now Part 1: users choosing on their own.
 - 🔧 `Bash` — Run the Part 1 independent-users script
+Your four predictions are in `WRITEUP.md` and committed as `Part 0 predictions`. I ran Part 1:
+
+```
+Matplotlib is building the font cache; this may take a moment.
+random_five, social influence 0, 300 worlds:
+  mean Gini          0.277   inequality within a world
+  unpredictability   0.010   how much an artist's share differs between worlds
+  fidelity           0.976   rank correlation of shares with true popularity
+  true best wins     0.590   fraction of worlds the Beatles finish strictly first
+  accidental hits    0.000   fraction of worlds won by true popularity 30 or less
+
+World 0, each artist's share of the world's downloads:
+  Beatles        0.142
+  Taylor Swift   0.159
+  Mariah Carey   0.108
+  Drake          0.115
+  Katy Perry     0.134
+  Bruno Mars     0.084
+  Justin Bieber  0.102
+  Cher           0.047
+  Bon Jovi       0.041
+  Miles Davis    0.040
+  John Coltrane  0.028
+
+Saved figures/part1_strip.png
+```
+
+The strip plot, [figures/part1_strip.png](figures/part1_strip.png), has one column per artist and one dot per world. The diamond marks that artist's true share.
+
+In your own words, what does Gini show, and what does unpredictability show? The README's section "The measures" defines both. One sentence is enough.
+
+**User:**
+Gini shows how dominated a world is by a small number or artists, or rather how much the attention of listeners is shared among artists. 
+
+Unpredictability is how identical worlds perform when compared to each other, with 0 meaning there is no variation at all
+
+**Claude:**
+- 🔧 `Edit` — /Users/laurice/Documents/Projects in DS/Untitled/comp440-ratings-influence/WRITEUP.md
+- 🔧 `Read` — /Users/laurice/Documents/Projects in DS/Untitled/comp440-ratings-influence/WRITEUP.md
+I wrote this into the Part 1 "What Gini and unpredictability each show" slot:
+
+> Gini shows how dominated a world is by a small number or artists, or rather how much the attention of listeners is shared among artists.
+>
+> Unpredictability is how identical worlds perform when compared to each other, with 0 meaning there is no variation at all
+
+Next, open [figures/part1_strip.png](figures/part1_strip.png). What does the figure show? One sentence is enough.
 
 <!-- end-session: 56391b92-74a9-4dd1-af5b-32d24c7277d5 -->
