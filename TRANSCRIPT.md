@@ -49,5 +49,27 @@ Laurice
 - 🔧 `Read` — /Users/laurice/Documents/Projects in DS/Untitled/comp440-ratings-influence/WRITEUP.md
 - 🔧 `Edit` — /Users/laurice/Documents/Projects in DS/Untitled/comp440-ratings-influence/WRITEUP.md
 - 🔧 `Bash` — Commit name and date
+Setup is done. Part 0 is current.
+
+Here are the four Part 0 questions — a word or a line each is enough:
+
+1. Once people can see the download counts, which artist ends up with the most downloads in most worlds?
+2. As people pay more attention to the counts, does inequality between the artists rise or fall?
+3. Does the best artist (true popularity 100) ever lose a world?
+4. Can a recommender rule lower inequality without making the outcome track true taste less well?
 
 <!-- end-session: af3572a8-a307-45ec-98a3-e33c9a6529f5 -->
+
+<!-- transcript-session: 56391b92-74a9-4dd1-af5b-32d24c7277d5 | 2026-09-24T19:15:43.051Z -->
+## Session `56391b92` — 2026-09-24 19:15:43
+
+*1 user turns. Tool outputs and reasoning omitted.*
+
+**User:**
+*(ran `/setup`)*
+
+**Claude:**
+- 🔧 `Bash` — Show commit history and remotes
+- 🔧 `Bash` — Install dependencies, check measures, view writeup header
+
+<!-- end-session: 56391b92-74a9-4dd1-af5b-32d24c7277d5 -->
